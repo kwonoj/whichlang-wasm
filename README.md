@@ -1,6 +1,6 @@
 ### Whichlang-wasm
 
-`whichlang-wasm` is a think webassembly bindings to [whichlang](https://github.com/quickwit-oss/whichlang) library.
+`whichlang-wasm` is a thin webassembly bindings to [whichlang](https://github.com/quickwit-oss/whichlang) library.
 
 ### Installation
 

@@ -1,6 +1,6 @@
 {
   "name": "whichlang-wasm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Webassembly bindings for whichlang, fast language detector",
   "main": "./dist/node/whichlang_wasm.js",
   "browser": "./dist/web/whichlang_wasm.js",
