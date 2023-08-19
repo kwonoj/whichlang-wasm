@@ -1,16 +1,10 @@
 {
   "name": "whichlang-wasm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Webassembly bindings for whichlang, fast language detector",
-  "type": "module",
-  "types": "./dist/node/index.d.ts",
-  "exports": {
-    ".": {
-      "require": "./dist/node/whichlang_wasm.js",
-      "import": "./dist/esm/whichlang_wasm.js"
-    }
-  },
+  "main": "./dist/node/whichlang_wasm.js",
   "browser": "./dist/web/whichlang_wasm.js",
+  "types": "./dist/node/index.d.ts",
   "files": [
     "dist/**/*.js",
     "dist/**/*.wasm",
@@ -19,10 +13,9 @@
   "scripts": {
     "prepublishOnly": "npm run build:all",
     "build": "wasm-pack build",
-    "build:esm": "npm run build -- --out-dir ./dist/esm",
     "build:cjs": "npm run build -- --target nodejs --out-dir ./dist/node",
     "build:web": "npm run build -- --target web --out-dir ./dist/web",
-    "build:all": "npm-run-all build:esm build:cjs build:web"
+    "build:all": "npm-run-all build:cjs build:web"
   },
   "repository": {
     "type": "git",
