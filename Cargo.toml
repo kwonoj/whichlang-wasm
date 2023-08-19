@@ -1,0 +1,13 @@
+[package]
+name = "whichlang-wasm"
+version = "0.0.1"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+js-sys = { version = "0.3.64" }
+rlsf = "0.2.1"
+wasm-bindgen = { version = "0.2.87" }
+whichlang = { version = "0.1.0" }
